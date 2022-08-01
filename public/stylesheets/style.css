@@ -39,6 +39,7 @@ ul {
 }
 
 button:hover {
+    text-decoration: none;
   background-color: grey;
 }
 
@@ -70,15 +71,6 @@ form > div {
 form label {
   display: block;
 }
-
-/* .wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-} */
 
 header {
   border-bottom: 1px solid #ccc;
