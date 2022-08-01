@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Talking Tech Blog</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
 
 </head>
@@ -14,28 +16,38 @@
   <div class="wrapper">
     <header>
       <h1>
-        <a href="/">Talking Tech Blog</a>
+
       </h1>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+<nav class="navbar navbar-dark bg-dark navbar-expand-md">
+    <div class="container-fluid"><a href="/" class="link-white text-white navbar-brand">Talking Tech Blog</a>
+    </div>
+ {{#if loggedIn}}
+        <a href="/dashboard" class="btn-no-style nav-item">dashboard</a>
+        <button id="logout" class="btn-no-style nav-item">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login" class="btn-no-style nav-item">login</a>
         {{/if}}
       </nav>
     </header>
     <main>
       {{{ body }}}
     </main>
-    <footer>
-      Thanks for visiting! <i class="fa fa-solid fa-robot"></i>
+    <footer class="footerpad">
+      <div class="container">
+      <p class="text-muted text-center">Thanks for blogging! <i class="fa fa-solid fa-robot"></i></p>
+      </div>
     </footer>
   </div>
   
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
