@@ -1,18 +1,21 @@
-  <h2 class="text-center mb-2">Comments</h2>
-  <div class="card mx-auto my-2 text-black bg-secondary">
-
-  <div class="card-body">
-
-  {{#each this}}
-    <section class="comment">
-      <div class="meta card m-4 text-white">
-            <p class="card-title bg-dark text-white p-2">
-          {{user.username}} on {{format_date created_at}}
-          </p>
-        <div class="text card-text p-2 text-dark">
-          {{comment_text}}
-        </div>
-      </div>
-    </section>
-  {{/each}}
-</div>
+<div class="card">
+    <div class="card-header">
+        <h3>Comments</h3>
+    </div>
+      {{#each this}}
+    <div class="card-body comment bg-dark">
+        <ul class="list-group">
+            <li class="list-group-item">
+                                <div class="row meta">
+                                    <div class="col-md-12">
+                                        <p>{{comment_text}} <br />
+                                        <small class="text-muted">
+                                        Posted by {{user.username}} on {{format_date created_at}}
+                                        </small></p>
+                                    </div>
+                                </div>
+                            </div>
+            </li>
+              {{/each}}
+              </div>
+          
