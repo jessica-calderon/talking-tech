@@ -22,7 +22,7 @@ HTML, Bootstrap/CSS, JavaScript, Express.js, Node.js, MySQL
 Users can create an account with a username, email, and password to login to their blog dashboard. Users can post, edit, and delete blogs, view and comment on exisiting blogs. 
 
 ## [Additional Tools](#table-of-contents)
-Additional tools: Handlebars.js, Google Fonts, Font Awesome
+express-handlebars, bcrypt, express-session, sequelize, Google Fonts, and Font Awesome
 
 ## [Contributing](#table-of-contents)
 Thank you for your interest in contributing to this project, however, I am currently not accepting third party contributions.    
@@ -31,8 +31,9 @@ Thank you for your interest in contributing to this project, however, I am curre
 https://jess-talks-tech.herokuapp.com/
 
 ## [Application Preview](#table-of-contents)
-Click the image to see the live demo.
-<a href='https://jess-talks-tech.herokuapp.com/' alt='preview video link'><img src='./public/assets/images/talking-tech-active.gif'></a>
+Click the image to see the live demo.<br>
+<a href='https://jess-talks-tech.herokuapp.com/' alt='preview video link'><img src='./public/assets/images/talking-tech-active.gif'></a><br>
+<a href='https://jess-talks-tech.herokuapp.com/'>Live Heroku Deployment</a>
 ## [Questions](#table-of-contents)
 Questions? Please contact me at the following links: <br>
 [GitHub](https://github.com/jessica-calderon) <br>
