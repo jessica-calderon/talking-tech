@@ -20,23 +20,8 @@ a:hover {
   text-decoration: none;
 }
 
-button {
-  background-color: black;
-  border: 0;
-  padding: 1%;
-  color: white;
-  font-weight: bold;
-  transition: background-color .1s;
-  cursor: pointer;
-  border-radius: 5px;
-}
 ul {
   list-style: none;
-}
-
-button:hover {
-    text-decoration: none;
-  background-color: grey;
 }
 
 .post-list {
@@ -54,32 +39,9 @@ textarea:focus, input:focus {
   outline: none;
   border: 1px solid black;
 }
-
-textarea {
-  min-width: 40%;
-  min-height: 100px;
-}
-
-form > div {
-  margin-bottom: 2%;
-}
-
-form label {
-  display: block;
-} 
-
 main {
   flex: 1;
   padding: 2% 4%;
-}
-
-.title-text {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-.delete-post-btn {
-  background-color: #d41414;
 }
 
 .delete-post-btn:hover {

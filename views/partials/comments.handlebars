@@ -1,21 +1,25 @@
 <div class="card">
-    <div class="card-header">
-        <h3>Comments</h3>
+  <div class="card-header">
+    <h3>
+      <i class="fa-solid fa-comment-dots"></i> Comments
+    </h3>
+  </div>
+  {{#each this}}
+    <div class="card-body bg-secondary comment">
+      {{! <ul class="list-group">
+            <li class="list-group-item"> }}
+      <div class="row meta">
+        <div class="card-body bg-light mt-2 mx-2">
+          <p>
+            {{comment_text}}
+            <p class="card-footer">
+            <small class="text-muted">
+              Posted by {{user.username}} on {{format_date created_at}}
+            </small>
+          </p>
+        </div>
+      </div>
     </div>
-      {{#each this}}
-    <div class="card-body comment bg-dark">
-        <ul class="list-group">
-            <li class="list-group-item">
-                                <div class="row meta">
-                                    <div class="col-md-12">
-                                        <p>{{comment_text}} <br />
-                                        <small class="text-muted">
-                                        Posted by {{user.username}} on {{format_date created_at}}
-                                        </small></p>
-                                    </div>
-                                </div>
-                            </div>
-            </li>
-              {{/each}}
-              </div>
-          
+    {{! </li> }}
+  {{/each}}
+</div>

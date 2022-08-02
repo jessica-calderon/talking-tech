@@ -10,25 +10,23 @@
       <label for="post-text">Enter your blog post here:</label>
       <textarea class="form-control" style="min-width: 100%" id="post-text" name="post-text" /></textarea>
     </div>
-    <button type="submit" class="btn btn-dark">Create</button>
+    <button type="submit" class="btn btn-dark m-3">Create <i class="fa-solid fa-plus"></i></button>
   </form>
 </section>
 
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
-  <ul>
+  <h2 class="m-3">Your Posts</h2>
+  {{!-- <ul> --}}
     {{#each posts as |post|}}
-    <li>
+    {{!-- <li> --}}
       {{> post-info post}}
-      <br>
-      <br>
       <div class="card-link">
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link link-secondary">Edit post</a> 
+      <button class="btn btn-outline-danger"><a href="/dashboard/edit/{{post.id}}" class="edit-link link-danger text-danger">Edit post</a></button>
       </div>
-    </li>
+    {{!-- </li> --}}
     {{/each}}
-  </ul>
+  {{!-- </ul> --}}
 </section>
 {{/if}}
 

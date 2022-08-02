@@ -14,9 +14,12 @@
       <span class="text-muted">
         Posted by
       </span>
-      {{user.username}} on {{format_date created_at}}
+      {{user.username}} on
+      <i class="fa-solid fa-calendar"></i>
+      {{format_date created_at}}
       |
       <a href="/post/{{id}}" class="text-muted">
+        <i class="fa-solid fa-comment-dots"></i>
         {{comments.length}} {{format_plural "comment" comments.length}}
       </a>
     </div>
