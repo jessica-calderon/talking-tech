@@ -6,11 +6,6 @@ body, html {
   width: 100vw;
   min-height: 100vh;
   background-color: black;
-  /* height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  color: #333; */
 }
 
 a {
@@ -22,6 +17,7 @@ a {
 
 a:hover {
   color: grey;
+  text-decoration: none;
 }
 
 button {
@@ -70,49 +66,18 @@ form > div {
 
 form label {
   display: block;
-}
-
-header {
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1%;
-}
-
-header h1 {
-  font-size: 1em;
-}
+} 
 
 main {
   flex: 1;
   padding: 2% 4%;
 }
+
 .title-text {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
-
-.btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  color: lightgray;
-  font-size: 100%;
-  font-weight: bold;
-  transition: color .1s;
-  margin-left: 16px;
-}
-
-.btn-no-style:hover {
-  text-decoration: none;
-  background: none;
-  color: gray;
-}
-
 .delete-post-btn {
   background-color: #d41414;
 }
@@ -120,34 +85,6 @@ main {
 .delete-post-btn:hover {
   background-color: #ff643d;
 }
-
-.post {
-  margin-bottom: 2%;
-  line-height: 150%;
-}
-
-.post .title span {
-  font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
-}
-
-.edit-link {
-  display: block;
-  margin: -1.5% 0 2% 0;
-}
-
-.new-blog input {
-  width: 500px;
-}
-/* .new-post-form input {
-  width: 300px;
-}
-
-.edit-post-form {
-  margin-bottom: 5%;
-} */
-
 footer {
   border-top: 1px solid #ccc;
   display: flex;
