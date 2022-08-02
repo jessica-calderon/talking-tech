@@ -22,13 +22,15 @@
       {{format_plural "comment" post.comments.length}}
     </div>
     <div class="m-1">
-      <textarea id="post-text" name="post-text" style="min-width: 100%;">{{post.post_text}}</textarea>
+      <textarea id="post-text" name="post-text" style="min-width: 100%;">
+        {{post.post_text}}
+      </textarea>
     </div>
-    <button type="submit" class="btn btn-secondary">
+    <button type="submit" class="btn styled-btn btn-secondary">
       Save Changes
       <i class="fa-solid fa-floppy-disk"></i>
     </button>
-    <button type="button" class="delete-post-btn btn btn-danger">
+    <button type="button" class="delete-post-btn styled-btn btn btn-danger">
       Delete Post
       <i class="fa-solid fa-trash-can"></i>
     </button>
