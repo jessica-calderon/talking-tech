@@ -19,7 +19,7 @@ An MVC, CMS style technology community blog where users can sign up, login, view
 HTML, Bootstrap/CSS, JavaScript, Express.js, Node.js, MySQL
       
 ## [Usage](#table-of-contents)
-Users can create an account with a username, email, and password to login to their blog dashboard. Users can post, edit, and delete blogs, view and comment on exisiting blogs. 
+Users can create an account with a username, email, and password to login to their blog dashboard. Users can post, edit, and delete blogs, view and comment on existing blogs. Users are automatically signed out of their account after five minutes of inactivity.
 
 ## [Additional Tools](#table-of-contents)
 express-handlebars, bcrypt, express-session, sequelize, Google Fonts, and Font Awesome

@@ -11,8 +11,8 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const sess = {
   secret: "Super secret secret",
-  // log out after 2 min inactivity
-  cookie: { maxAge: 120000 },
+  // log out after 5 min inactivity
+  cookie: { maxAge: 300000 },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
@@ -40,4 +40,3 @@ sequelize.sync({ force: false }).then(() => {
     console.log("Now listening");
   });
 });
-//
